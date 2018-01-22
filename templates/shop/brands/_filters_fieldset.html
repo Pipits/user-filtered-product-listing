@@ -1,0 +1,13 @@
+<perch:before>
+    <fieldset>
+    <legend>Brands</legend>
+    <ul>
+</perch:before>
+        <li>
+            <input type="checkbox" id="<perch:shop id="slug" type="slug" />" name="brand[]" value="<perch:shop id="slug" type="slug" />" <perch:if id="slug" match="in" value="{selected_brands}">checked</perch:if>>
+            <label for="<perch:shop id="slug" type="slug" />"><perch:shop id="title" type="text" /></label>
+        </li>
+<perch:after>
+    </ul>
+    </fieldset>
+</perch:after>

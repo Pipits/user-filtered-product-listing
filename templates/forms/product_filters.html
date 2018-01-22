@@ -1,0 +1,14 @@
+<perch:form id="filters" method="get">
+    <perch:forms id="cats_fieldset" html="true" />
+    <perch:forms id="brands_fieldset" html="true" />
+    <fieldset>
+        <legend>Prices</legend>
+        <ul>
+            <perch:input id="price" type="radio" options="25-100, 100-200, 200-400, 400-600, 600" class="radio" wrap="li" <perch:if exists="selected_price">value="<perch:forms id="selected_price" />"</perch:if> />
+        </ul>
+    </fieldset>
+    <div>
+        <input type="submit" value="Apply">
+        <a href="<perch:forms id="perch_page_path" />">Clear</a>
+    </div>
+</perch:form>

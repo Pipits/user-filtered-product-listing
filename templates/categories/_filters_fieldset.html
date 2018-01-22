@@ -1,0 +1,13 @@
+<perch:before>
+    <fieldset>
+    <legend>Categories</legend>
+    <ul>
+</perch:before>
+        <li>
+            <input type="checkbox" id="<perch:category id="catPath" type="text" />" name="category[]" value="<perch:category id="catPath" type="text" />" <perch:if id="catPath" match="in" value="{selected_cats}">checked</perch:if>>
+            <label for="<perch:category id="catPath" type="text" />"><perch:category id="catTitle" type="text" /></label>
+        </li>
+<perch:after>
+    </ul>
+    </fieldset>
+</perch:after>
